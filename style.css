@@ -1,0 +1,34 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: #121212;
+  color: #eee;
+  text-align: center;
+  padding: 40px;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+}
+
+input {
+  padding: 10px;
+  font-size: 1.2em;
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#outputText {
+  font-size: 2em;
+  margin-top: 20px;
+  color: #00e676;
+}
