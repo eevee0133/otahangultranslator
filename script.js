@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelector("button").addEventListener("click", translate);
+});
+
 const otahangul = {
   A: 'ㅏ', B: '비', C: '시', D: '디', E: '이', F: '에프', G: '지', H: '에이치',
   I: '아이', J: '제이', K: '케이', L: '엘', M: '엠', N: '엔', O: '오', P: '피',
@@ -10,11 +14,7 @@ function translate() {
   let output = "";
 
   for (let char of input) {
-    if (otahangul[char]) {
-      output += otahangul[char];
-    } else {
-      output += char;
-    }
+    output += otahangul[char] || char;
   }
 
   document.getElementById("outputText").innerText = output;
